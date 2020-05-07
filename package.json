@@ -1,0 +1,12 @@
+{
+  "name": "flying-squid-authme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "start": "node test.js",
+  "dependencies": {
+    "quick.db": "7.1.1"
+  },
+  "devDependencies": {
+    "flying-squid": "latest"
+  }
+}
