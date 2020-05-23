@@ -1,5 +1,5 @@
 # Flying Squid Authme
-A flying squid local authentication plugin for `online-mode=false` servers.
+A [flying squid](https://www.github.com/PrismarineJS/flying-squid) local authentication plugin for `online-mode=false` servers.
 
 ## Config Settings
 
