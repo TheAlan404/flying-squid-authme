@@ -1,6 +1,6 @@
 # Flying Squid Authme
 
-A flying squid authentication plugin for `online-mode=false` servers.
+A [flying squid](https://github.com/PrismarineJS/flying-squid) authentication plugin for `online-mode=false` servers.
 
 ### Install
 
