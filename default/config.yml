@@ -1,0 +1,53 @@
+config-version-do-not-touch: "2.0.0"
+
+# The time (in milliseconds) before we kick the player if he is not logged in.
+# 1000 ms = 1 second
+# Set to false to disable
+login-timeout: 10000 # 10 seconds
+
+# Should authme protect the server?
+# If this is true, not logged in players will not be able to move, chat or execute commands
+# Setting this to false will disable the main purpose of authme
+protection: true
+
+# Commands allowed when players are not logged in
+allowedCommands:
+  - "login"
+  - "register"
+
+commands:
+  login:
+    base: "login"
+    info: "Logs you in."
+    usage: "/login <password>"
+  register:
+    base: "register"
+    info: "Registers you to the server."
+    usage: "/register <password> <password>"
+
+messages:
+  # The messages sent to the player after he logs in
+  # You can include something like a welcome back message here.
+  # This should be an array of messages
+  motd:
+    - "§aWelcome to a flying-squid-authme protected server!"
+
+  # login messages
+  login: "§aLogin with /login <password>"
+  loginSuccess: "§aSuccessfully logged in!"
+  loginFail: "§cWrong password!"
+  loginKick: "§cYou have been kicked for not logging in!"
+  alreadyLoggedIn: "§cYou are already logged in"
+
+  # register messages
+  register: "§cRegister with /register <password> <password>"
+  registerSuccess: "§aSuccessfully registered!"
+  registerFail: "§cYour passwords are not the same!"
+  alreadyRegistered: "§cYou are already registered."
+
+  # messages sent when player tries to do something while not being not logged in
+  noChat: "§cYou must be logged in to chat"
+  noCommands: "§cYou must be logged in to use commands"
+
+# Advanced
+saltRounds: 10
