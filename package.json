@@ -1,12 +1,27 @@
 {
   "name": "flying-squid-authme",
-  "version": "1.0.0",
-  "main": "index.js",
-  "start": "node test.js",
+  "version": "2.0.0",
+  "main": "src/index.js",
+  "author": "TheAlan404",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "dada513",
+      "email": "kontakt@dada513.eu",
+      "url": "https://github.com/dada513"
+    }
+  ],
+  "scripts": {
+    "lint": "standard",
+    "fix": "standard --fix"
+  },
   "dependencies": {
-    "quick.db": "7.1.1"
+    "bcrypt": "^4.0.1",
+    "fs-extra": "^9.0.0",
+    "quick.db": "7.1.1",
+    "yaml": "^1.10.0"
   },
   "devDependencies": {
-    "flying-squid": "latest"
+    "standard": "^14.3.4"
   }
 }
