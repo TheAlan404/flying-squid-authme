@@ -1,5 +1,12 @@
 config-version-do-not-touch: "2.0.0"
 
+# The hashing algorithm to use
+# Currently supported: BCRYPT
+hash: "BCRYPT"
+
+# If you are switching hashing algorithms, set this option to the old one.
+oldhash: ""
+
 # The time (in milliseconds) before we kick the player if he is not logged in.
 # 1000 ms = 1 second
 # Set to false to disable
