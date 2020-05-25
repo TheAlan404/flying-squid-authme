@@ -1,9 +1,14 @@
 {
   "name": "flying-squid-authme",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "src/index.js",
   "author": "TheAlan404",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheAlan404/flying-squid-authme.git"
+  },
+  "homepage": "https://github.com/TheAlan404/flying-squid-authme#readme",
   "contributors": [
     {
       "name": "dada513",
