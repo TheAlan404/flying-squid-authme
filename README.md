@@ -1,5 +1,9 @@
 # Flying Squid Authme
 
+| [GitHub](https://github.com/TheAlan404/flying-squid-authme) | [NPM](https://www.npmjs.com/package/flying-squid-authme) |
+| ----------------------------------------------------------- | -------------------------------------------------------- |
+
+
 A [flying squid](https://github.com/PrismarineJS/flying-squid) authentication plugin for `online-mode=false` servers.
 
 ### Install
