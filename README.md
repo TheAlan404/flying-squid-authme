@@ -1,5 +1,7 @@
 # Flying Squid Authme
 
+[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
+
 | GitHub                                                                              | NPM                                               | Docs                                                               |
 | ----------------------------------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------------ |
 | [TheAlan404/flying-squid-authme](https://github.com/TheAlan404/flying-squid-authme) | https://www.npmjs.com/package/flying-squid-authme | [Readme](https://github.com/TheAlan404/flying-squid-authme#readme) |
