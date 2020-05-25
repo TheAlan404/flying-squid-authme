@@ -1,8 +1,8 @@
 # Flying Squid Authme
 
-| [GitHub](https://github.com/TheAlan404/flying-squid-authme) | [NPM](https://www.npmjs.com/package/flying-squid-authme) |
-| ----------------------------------------------------------- | -------------------------------------------------------- |
-
+| GitHub                                                                              | NPM                                               | Docs                                                               |
+| ----------------------------------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------------ |
+| [TheAlan404/flying-squid-authme](https://github.com/TheAlan404/flying-squid-authme) | https://www.npmjs.com/package/flying-squid-authme | [Readme](https://github.com/TheAlan404/flying-squid-authme#readme) |
 
 A [flying squid](https://github.com/PrismarineJS/flying-squid) authentication plugin for `online-mode=false` servers.
 
