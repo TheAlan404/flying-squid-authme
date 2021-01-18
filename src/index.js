@@ -2,6 +2,7 @@ const quickdb = require('quick.db')
 const bcrypt = require('bcrypt')
 const { config } = require('./config')
 const loggedIn = {}
+const waitLoginPromises = {}
 const database = quickdb
 
 module.exports.server = () => {}
@@ -16,6 +17,12 @@ module.exports.player = (player, serv) => {
     if (database.has(player.username)) player.chat(config.messages.login)
     else player.chat(config.messages.register)
   })
+
+  player.waitLogin = () => {
+    return new Promise((resolve) => {
+      waitLoginPromises[player.username] = resolve
+    })
+  }
 
   // add commands
   player.commands.add({
@@ -33,6 +40,7 @@ module.exports.player = (player, serv) => {
       const hash = database.get(player.username)
       if (await bcrypt.compare(password, hash)) {
         loggedIn[player.username] = true // remove the player from not logged in list
+        if (waitLoginPromises[player.username]) waitLoginPromises[player.username]() // player.waitLogin
         player.chat(config.messages.loginSuccess)
       } else {
         player.chat(config.messages.loginFail)
