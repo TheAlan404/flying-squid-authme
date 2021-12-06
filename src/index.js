@@ -23,9 +23,9 @@ module.exports.player = (player, serv) => {
       waitLoginPromises[player.username] = resolve
     })
   }
-
-  // add commands
-  player.commands.add({
+  //Changed from player.commands.add to serv.command.add
+ 
+  serv.commands.add({
     base: config.commands.login.base,
     info: config.commands.login.info,
     usage: config.commands.login.usage,
@@ -48,7 +48,7 @@ module.exports.player = (player, serv) => {
     }
   })
 
-  player.commands.add({
+  serv.commands.add({
     base: config.commands.register.base,
     info: config.commands.register.info,
     usage: config.commands.register.usage,
